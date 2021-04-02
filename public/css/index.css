@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Round');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
+
+html, body {
+  font-family: 'Share Tech', sans-serif;
+  color: white;
+}
+
+html {
+  background: #333;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  padding-top: 1em;
+}
+
+nav, footer.page-footer {
+  background: #222;
+}
+
+nav .brand-logo img {
+  height: 2em;
+}
+
+nav ul a {
+  font-size: 1.5em;
+}
+
+nav span.material-icons-round {
+  line-height: unset;
+}
+
+.page-footer .footer-copyright {
+  background: transparent;
+  box-shadow: 0 2px 5px 2px #111;
+}
+
+.parallax-container .parallax img {
+  width: 120vw;
+}
+
+.round {
+  border-radius: 200vmax;
+}
+
+img.avatar {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+html .card {
+  background: #0005;
+}
+
+html .card .card-reveal {
+  background: #000e;
+}
+
+.card .card-image img {
+  height: 200px;
+  object-fit: contain;
+  padding-top: 1em;
+}
+
+footer li img {
+  height: 1.4em;
+  margin-bottom: -0.3em;
+}
+
+footer li pre {
+  display: inline-block;
+}
