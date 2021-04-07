@@ -61,6 +61,13 @@ html .card {
   background: #0005;
 }
 
+html .skills .card {
+  display: inline-grid;
+  width: 320px;
+  margin: 5px 10px;
+  text-align: left;
+}
+
 html .card .card-reveal {
   background: #000e;
 }
@@ -71,9 +78,14 @@ html .card .card-reveal {
   padding-top: 1em;
 }
 
-footer li img {
+footer li img ,
+footer li i[class*="material-icons"] {
   height: 1.4em;
+  width: 1.8em;
+  object-fit: contain;
   margin-bottom: -0.3em;
+  font-size: unset;
+  text-align: center;
 }
 
 footer li pre {
