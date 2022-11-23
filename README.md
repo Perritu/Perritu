@@ -1,12 +1,9 @@
-¡👋 Hola! Soy Angel. 📚 Estudiante y desarrollador.
+¡Hola! Soy Angel. Desarrollador por convicción, gamer entuciasta y ajedrecista aficionado.
 
-Me gustan las tecnologías libres ⚛️, videojuegos 🎮, aprender cosas nuevas 👀, entre otros.
+Me gustan las tecnologías libres, aprender cosas nuevas y demás.
 
-🌱 Actualmente estoy estudiando arquitectura de software. La principal razón es que me 💝 apasiona
-el desarrollo del mismo.
+Me gusta el software principalmente porque permite crear un mundo sin abandonar el teclado. ¡Parece magia!
 
-🏦 Actualmente trabajo en Fiexact. Aquí he podido aprender muchas tecnologías 💡 y mejorar mis
-bases en aquellas que ya conocía. He convivido con colaboradores muy amigables 👨👩 con quienes
-he aprendido, tanto de ellos, como de mí mismo.
-☕ He aprendido nuevos enfoques a tecnologías que creía desfazadas y cómo adoptar aquellas que aún
-no he utilizado 🐍.
+He aprendido junto a distintos colegas a adoptar nuevas tecnologías, retomar aquellas que creí obsoletas y dar nuevos enfoques a aquellas que conocía.
+
+El entorno del software me ha permitido conocer otros entornos que no creí llegar a conocer, permitiendome aprender de áreas que no creí llegar a involucrarme.

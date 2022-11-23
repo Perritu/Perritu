@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Material+Icons+Round');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Source+Sans+Pro&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 
-html, body {
-  font-family: 'Share Tech', sans-serif;
-  color: white;
-}
-
+/* Diseño de página */
 html {
   background: #333;
+  color: white;
+  font-family: 'Source sans Pro', sans-serif;
 }
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+tt,
+pre {
+  font-family: 'Source Code Pro', monospace;
 }
 
 main {
@@ -25,77 +28,155 @@ main {
 nav, footer.page-footer {
   background: #222;
 }
-
+nav .headline {
+  font-size: 2.5em;
+}
 nav .brand-logo img {
   height: 2em;
 }
 
-nav ul a {
-  font-size: 1.5em;
+.parallax-container {
+  height: auto;
+  background: #000C;
 }
-
-nav span.material-icons-round {
-  line-height: unset;
-}
-
-.page-footer .footer-copyright {
-  background: transparent;
-  box-shadow: 0 2px 5px 2px #111;
-}
-
 .parallax-container .parallax img {
   width: 120vw;
 }
-
-.round {
-  border-radius: 200vmax;
+.parallax-container .parallax img.nojs {
+  position: unset;
+  opacity: 1;
+  transform: unset;
+  left: unset;
+  object-fit: cover;
+  height: 100%;
+}
+.parallax-container .container {
+  text-shadow:
+  1px 1px 1px black,
+  1px -1px 1px black,
+  -1px 1px 1px black,
+  -1px -1px 1px black;
+  margin-bottom: 1.5em;
 }
 
+/* Títulos y subtitulos */
+h1 {
+  color: #99f;
+  font-size: 2rem;
+  margin: 0.5em 0 0.2em;
+}
+h2 {
+  font-size: 2rem;
+  margin: auto 0;
+  line-height: unset;
+}
+h1 > span,
+h2 > span {
+  font-size: 0.4em;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+/* Textos y contenido */
+p {
+  margin: 0 0 0.5em;
+}
+p.en {
+  opacity: 0.8;
+  font-size: 0.8em;
+}
+
+.row .col.side-content {
+  font-size: 0.8em;
+}
+.side-content h1 {
+  font-size: 1.3rem;
+}
+.side-content h1 > span {
+  font-size: 0.7em;
+  font-weight: normal;
+}
+.side-content p.en {
+  font-size: 0.9em;
+}
+
+/* Avatar */
 img.avatar {
   height: 200px;
   width: 200px;
   object-fit: cover;
 }
 
-html .card {
-  background: #0005;
+/* Diseño de pagina para impresión */
+.only-print {
+  display: none;
 }
 
-html .skills .card {
-  display: inline-grid;
-  width: 320px;
-  margin: 5px 10px;
-  text-align: left;
-}
-
-html .card .card-reveal {
-  background: #000e;
-}
-
-.card .card-image img {
-  height: 200px;
-  object-fit: contain;
-  padding-top: 1em;
-}
-
-footer li img ,
-footer li i[class*="material-icons"] {
-  height: 1.4em;
-  width: 1.8em;
-  object-fit: contain;
-  margin-bottom: -0.3em;
-  font-size: unset;
-  text-align: center;
-}
-
-footer li pre {
-  display: inline-block;
-}
-
-/* Eliminación de centrado de logo. */
-@media only screen and (max-width: 992px) {
-  html nav .brand-logo {
-    left: unset;
-    transform: unset;
+@media only print {
+  html {
+    color: black;
+    background: white;
+    font-size: 13px;
+    line-height: unset;
   }
+
+  nav {
+    background: unset;
+    color: unset;
+    box-shadow: unset;
+  }
+  nav .brand-logo > img {
+    filter: invert(100%);
+  }
+
+  .only-print {
+    display: unset;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .container {
+    max-width: unset;
+    margin: auto;
+  }
+
+  .row .col.m3 {
+    width: 25%;
+  }
+
+  .row .col.m9 {
+    width: 75%;
+  }
+
+  h1 {
+    color: black;
+    font-weight: bold;
+  }
+  h2 {
+    color: #333;
+    font-weight: normal;
+  }
+  h1,
+  h2 {
+    margin: 0.2em auto auto;
+    line-height: unset;
+  }
+  h1 > span,
+  h2 > span {
+    font-size: 0.7em;
+    font-weight: normal;
+    opacity: 1;
+    color: #555;
+  }
+
+  a {
+    color: black;
+  }
+}
+
+/* Omite elementos si no hay JS */
+.nojs.unshow {
+  display: none;
 }

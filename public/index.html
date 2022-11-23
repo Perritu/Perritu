@@ -1,311 +1,280 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<head>
-  <meta charset="utf-8">
-  <title>Angel García</title>
+    <!-- Preconnetc -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css">
 
-  <link type="text/css" rel="stylesheet" href="css/index.css?vcg"  media="screen,projection"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
+    <!-- CSP (me diste un dolor de huevos!) -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js https://www.angelgarcia.dev/js/index.js;
+    style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com;
+    object-src 'none';
+    base-uri 'self';
+    connect-src 'self';
+    font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com;
+    frame-src 'self';
+    img-src 'self';
+    manifest-src 'self';
+    media-src 'self';
+    worker-src 'none';
+    "> -->
 
-<body>
-  <div class="navbar-fixed">
+    <title>Angel García</title>
+  </head>
+  <body>
     <nav>
-      <div class="container">
-        <a href="#" class="brand-logo">
-          <img src="img/logo.svg" alt="Angel García">
-        </a>
-        <ul id="nav-mobile" class="right hide-on-down">
-          <li>
-            <a href="#about" title="Acerca de">
-              <span class="material-icons-round">person</span>
-            </a>
-          </li>
-          <li>
-            <a href="#areas" title="Tecnologías">
-              <span class="material-icons-round">engineering</span>
-            </a>
-          </li>
-          <li>
-            <a href="#reach" title="Tecnologías">
-              <span class="material-icons-round">contact_mail</span>
-            </a>
-          </li>
-        </ul>
+      <div class="nav-wrapper container">
+        <div class="brand-logo">
+          <img src="/img/logo.svg" alt="Angel García">
+        </div>
+        <div class="hide-on-down right headline">
+          Angel García
+        </div>
       </div>
     </nav>
-  </div>
 
-  <main>
-    <div class="row container">
-      <div class="col s12 m6 l8 right">
-        <h1 class="center-align">¡Hola!</h1>
+    <div class="container row no-print">
+      <div class="col s12 m8 right">
+        <h1>¡Hola! <span>Hi!</span></h1>
         <p>
-          Soy Angel García, desarrollador full-stack. Me encanta la programación
-          porque parece mágia: Te permite crear un mundo sin abandonar tu teclado.
+          Son Angel. Me encanta la programación porque te permite crear un mundo
+          sin abandonar el teclado. ¡Parece magia! <br>
+        </p>
+        <p class="en">
+          I'm Angel. I love the coding cuz' you can create a world without
+          leaving the keyboard. Feels like magic!
         </p>
       </div>
-      <div class="col s12 m6 l4 left center-align">
-        <img src="img/avatar.webp" alt="Angel García" class="round avatar">
+      <div class="col s12 m4">
+        <img src="img/avatar.webp" alt="Avatar" class="avatar">
       </div>
     </div>
 
-    <div class="parallax-container" style="background: #000c; height: auto;">
-      <div class="parallax"><img src="img/caspar-camille-rubin-0qvBNep1Y04-unsplash.min.webp"></div>
+    <div class="parallax-container no-print">
+      <div class="parallax">
+        <img src="img/caspar-camille-rubin-0qvBNep1Y04-unsplash.min.webp" class="nojs">
+      </div>
       <div class="container">
-        <h3>¿Quién soy?</h3>
+        <h1>¿Quién soy? <span>Who am I?</span></h1>
         <p>
           Me considero gamer casual, programador experimentado y ajedrecista aficionado. <br>
-          Ocacionalmente transmito en <a href="//twitch.tv/perritu" target="_blank">Twitch</a>,
-          trabajo en <a href="//github.com/perritu" target="_blank">proyectos personales</a> o
-          simplemente <a href="https://www.youtube.com/playlist?list=PL6IX5ZZXpghl7KB083I0SM9qAzc8xq3I3" target="_blank">escucho música</a>.
+          Ocacionalmente transmito en <a href="https://twitch.tv/perritu">Twitch</a>,
+          trabajo en <a href="https://github.com/perritu">proyectos personales</a> o me dejo llevar... <br>
+        </p>
+        <p class="en">
+          I think of myself as a cassual gamer, experienced coder and noob chess player. <br>
+          Somethimes I stream on <a href="https://twitch.tv/perritu">Twitch</a>,
+          work on <a href="https://github.com/perritu">personal projects</a>, or just fade away...
         </p>
       </div>
     </div>
 
-    <div class="container">
-      <h1>Habilidades</h1>
-      <p>Estas son algunas tecnologías con las que estoy familiarizado.</p>
-
-      <div class="skills center-align">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/javascript.webp" alt="JS" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">Ecmascript</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">Ecmascript<i class="material-icons right">close</i></span>
-            <p>
-              Lo uso con bastante frecuencia. Desarrollo aplicaciones web que
-              interactúan con el usuario, APIs y, en general, contenido dinámico. <br>
-
-              Es uno de mis lenguajes predilectos. lo encuentro muy versátil, lo
-              que permite su aplicación para múltiples propósitos.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="img/html5.webp" alt="HTML" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">HTML</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">HTML<i class="material-icons right">close</i></span>
-            <p>
-              La base del www. Lo utilizo para aplicaciones web, contenido
-              dinámico en software de transmisión y este sitio. Es, a mi ver, un
-              "must-have". <br>
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="img/css3.webp" alt="CSS" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">CSS</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">CSS<i class="material-icons right">close</i></span>
-            <p>
-              Un excelente complemento de HTML. Facilita crear aplicaciones web,
-              simplificando considerablemente el diseño de las mismas. <br>
-
-              Una de mis cosas favoritas es que resulta muy cómodo de integrar
-              en frameworks y aplicaciones existentes.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="img/php.webp" alt="php" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">PHP</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">PHP<i class="material-icons right">close</i></span>
-            <p>
-              Una de mis favoritas. Me permite gestionar grandes volúmenes de
-              información, scapping, complementar otras tecnologías y
-              simplificar procesos.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="img/jquery.webp" alt="JQ" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">JQuery</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">JQuery<i class="material-icons right">close</i></span>
-            <p>
-              Una de mis favoritas. Usandolo desde antaño, me siento muy
-              familiarizado con él. Me permite manipular el árbol sin recurrir a
-              npm, y a la vez, me permite crear aplicaciones web que consumen
-              muy pocos recursos, considerandolo contra Vue o React, por ejemplo.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="img/mariadb.webp" alt="MariaDB" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">MariaDB</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">MariaDB<i class="material-icons right">close</i></span>
-            <p>
-              Una de mis favoritas. La uso con bastante frecuencia. Me gusta por
-              encima de MySQL por sus herramientas de versionamiento de tablas,
-              optimización de índices y, virtualmente, puede reemplazarle.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="img/laravel.svg" alt="Laravel" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">Laravel</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">Laravel<i class="material-icons right">close</i></span>
-            <p>
-              Frecuentemente solicitado. Lo utilizo principalmente para back-end,
-              ya que su facilidad para gestionar APIs, junto al modelo MVC resulta
-              en aplicaciones robustas y escalables.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="img/debian.svg" alt="Linux Debian" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">Debian</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">Debian<i class="material-icons right">close</i></span>
-            <p>
-              Mi linux favorito. Es mi entorno de escritorio, mi servidor personal,
-              mi distribución favorita y, en general, mi herramienta principal.
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-            alt="NodeJS" class="activator">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator center-align">NodeJS</span>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title">NodeJS<i class="material-icons right">close</i></span>
-            <p>
-              Sin mucho que decir. Lo he usado para scrapping especializado,
-              implementación de IA y creación de bots para Discord y Twitch. <br>
-
-              En casos puntuales, lo he usado para complementar PHP en scrapping
-              más especializado.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      &nbsp; <!-- Este div evita que quede empalmado el div superior con el footer. -->
-    </div>
-  </main>
-
-  <footer class="page-footer">
     <div class="container row">
-      <div class="col s12 m6">
-        <h5>Contáctame</h5>
-        <ul>
-          <li>
-            <img src="img/Discord-Logo-Color.svg" alt="Discord">
-            <a href="https://discord.bio/p/Perritu" target="_blank">Discord</a>
-          </li>
-          <li>
-            <img src="img/LI-In-Bug.webp" alt="LinkedIn">
-            <a href="https://www.linkedin.com/in/angelgm1/" target="_blank">LinkedIn</a>
-          </li>
-          <li>
-            <img src="img/telegram.svg" alt="Telegram">
-            <a href="https://web.telegram.org/#/im?p=@ttvPerritu" target="_blank">Telegram</a>
-          </li>
-          <li>
-            <i class="material-icons-round">mail</i>
-            <a href="mailto:honeypot@cia.gov" style="display: none;" target="_blank">honeypot@cia.gov</a>
-          </li>
-        </ul>
-        <!-- Encuentrame en
-        <a href="https://web.telegram.org/#/im?p=@ttvPerritu" target="_blank">Telegram</a>
+      <div class="col s12 m3 right side-content">
+        <h1>Contacto</h1>
+        <tt class="nojs unshow">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:honeypot@cia.gov">honeypot@cia.gov</a>
+        </tt><br>
+        <tt>
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/perritu" target="_blank">@perritu</a>
+        </tt><br>
+        <tt>
+          <i class="fa-brands fa-twitch"></i>
+          <a href="https://twitch.tv/perritu" target="_blank">/Perritu</a>
+        </tt>
 
+        <h1>Soft-skills</h1>
+        <p>
+          &bull; Curioso
+          &bull; Autodidacta
+          &bull; Creativo
+          &bull; Dialogo en público
+          &bull; Ortografía
+          &bull; Adaptativo
+          &bull; Tolerante-Paciente
+          &bull; Entuciasta
+          &bull; Empatico
+          &bull; Estratega
+        </p>
+        <p class="en">
+          &bull; Curious
+          &bull; Autodidact
+          &bull; Creative
+          &bull; Public speech
+          &bull; Orthography
+          &bull; Adaptive
+          &bull; Tolerant/Patient
+          &bull; Collaborative
+          &bull; Enthusiast
+          &bull; Emphatic
+          &bull; Strategist
+        </p>
 
-        <li>
-          <a href="#discord">
-            <pre>!  Angel#0001</pre>
+        <h1>Habilidades <span>Skills</span></h1>
+        <p>
+          &bull; Toma de decisiones
+          &bull; Multitarea
+          &bull; Colaborativo
+          &bull; Iniciativa
+          &bull; Trabajo en equipo
+        </p>
+        <p class="en">
+          &bull; Decision making
+          &bull; Multitasking
+          &bull; Collaborative
+          &bull; Initiative
+          &bull; Team working
+        </p>
 
-            Encuentrame en
-            <a href="https://www.linkedin.com/in/angelgm1/" target="_blank">LinkedIn</a>,
-            <a href="https://discord.bio/p/Perritu" target="_blank">Discord</a>,
-            y por correo en <a href="mailto:honeypot@cia.gov" style="display: none;">honeypot@cia.gov</a>
-            <a href="#lurk">Habilita JS para ver esto ;)</a>.
-          </a>
-        </li> -->
+        <h1>Tecnologías <span>Technologies</span></h1>
+        <p>
+          PHP: Laravel, PDO <br>
+          DB: MySQL / MariaDB, PgSQL <br>
+          JS: Node, ES6, jQuery, Angular <br>
+          PY: Jupyter <br>
+          MISC: GIT, Packagist, SPA, Cloudflare, Heroku, OpenWRT, Proxmox
+        </p>
+
+        <h1>Lenguajes <span>Programming</span></h1>
+        <p>Bash &bull; C &bull; HTML5 &bull; JS &bull; MD &bull; PHP</p>
+
+        <h1>Idiomas <span>Languages</span></h1>
+        <p>
+          Español &bull; Inglés
+        </p>
+        <p class="en">
+          Spanish &bull; English
+        </p>
+      </div>
+
+      <div class="col s12 m9 central-content">
+        <h1>Experiencia <span class="en">Experience</span></h1>
+
+        <h2>Tata Consulting Services <span>2022</span></h2>
+        <p>
+          Consultoría de software, asesoramiento y capacitación en estándares de
+          codificación PSR-12, estándar JS según w3c, y prácticas comunes según
+          editorconfig para cada proyecto.
+        </p>
+        <p class="en">
+          Software consulting, assessment and guiding in coding standards
+          PSR-12, JS according to w3c, and common practices according to
+          editorconfig for each project.
+        </p>
+
+        <h2>Fiexact <span>2019 &bull; 2022</span></h2>
+        <p>
+          Desarrollo de software, modificación de software existente y
+          documentación de los mismos, implementando correcciones y mejoras del
+          rendimiento al mismo. <br>
+          Análisis de información y requerimientos para determinar, recomendar y
+          planificar nuevas soluciones o modificaciones. <br>
+          Almacenar, consultar y manipular información funcional para el
+          software implementado.
+        </p>
+        <p class="en">
+          Software development, modification and documentation, implementation
+          of fixes and performance enhancements. <br>
+          Requirements and information analysis to recommend and plan new
+          solutions and modifications. <br>
+          Store, fetch and manage functional information of implemented software.
+        </p>
+
+        <h2>Omnilife <span>2018 &bull; 2019</span></h2>
+        <p> Vendedor independiente.</p>
+        <p class="en">Independent seller.</p>
+
+        <h2>Aduanasoft <span>2017 &bull; 2018</span></h2>
+        <p>
+          Modificar software existente para corregir errores, adaptarlo a las
+          necesidades del usuario y mejorar su rendimiento. <br>
+          Obtener y evaluar las necesidades del cliente, como reportes, costos
+          y seguridad, y desarrollar e implementar soluciones y
+          configuraciones de hardware.
+        </p>
+        <p class="en">
+          Modify existing software to make fixes, adapt it to customer's needs
+          and performance improvement. <br>
+          Get and evaluate customer's needs, such as reports, costs and
+          security needs, to develop and implement solutions and hardware
+          setup.
+        </p>
+
+        <h2>Blue-panda <span>2016</span></h2>
+        <p>Escribir, diseñar y editar sitios web.</p>
+        <p class="en">Write, design and edit websites.</p>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container right-align">
-        Hecho con 💕 usando <a href="//materializecss.com" target="_blank" title="Materialize">materialize css</a>.
+
+    <div class="container row">
+      <div class="col s12 central-content">
+        <h1>Proyectos <span>Projects</span></h1>
+
+        <h2>Router <span>Librería PHP &bull; PHP library</span></h2>
+        <p>
+          Librería diseñada para gestionar y responder a tráfico entrante en
+          proyectos PHP, pensada además para integrarse con otras librerías o
+          framework al ser auto contenida, teniendo en mente la posibilidad de
+          escalabilidad y estabilidad. <br>
+          Es un proyecto en progreso.
+        </p>
+        <p class="en">
+          Library designed for handling and responding incoming traffic in PHP
+          projects, built to be integrated along with third-party libraries or
+          frameworks due to be self-contained, keeping in mind the scalability
+          and stability. <br>
+          It's a work in progress.
+        </p>
+
+        <h2>Api sessions <span>Micro librería &bull; Micro library</span></h2>
+        <p>
+          Librería diseñada para implementar el uso de las variables de sesión
+          de PHP en entornos en los que normalmente no es posible,
+          sustituyendo las cookies por otros medios disponibles (como token de
+          sesión, uuid de transacción u otro tipo de información única).
+        </p>
+        <p class="en">
+          Library designed to implement native PHP sessions on environments
+          where it's not possible normally, by substituting the cookies with
+          other identifiers available (such as token sessions, transaction
+          uuids among other types of unique information).
+        </p>
+
+        <h2>e621 pool downloader <span>Gestor de descarga &bull; Download manager</span></h2>
+        <p>
+          Script que automatiza la descarga, conversión y empaquetado de
+          imágenes desde galerías de e621, sitio de arte furry (+18).
+        </p>
+        <p class="en">
+          Script that automates the download, conversion and packaging of
+          images from galleries on e621, a furry art site (+18).
+        </p>
+
+        <h2>YT Dislike Display <span>userscript</span></h2>
+        <p>
+          Complemento de navegador para estimar y mostrar una cantidad de
+          dislikes, una vez que google ha decidido ocultar esta cifra. <br>
+          Proyecto en abandono.
+        </p>
+        <p class="en">
+          Browser add-on to estimate and show an amount of dislikes, once
+          google decided to hide this number. <br>
+          Abandoned project.
+        </p>
       </div>
     </div>
-  </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', () => {
-      M.Parallax.init(
-        document.querySelectorAll('.parallax')
-      );
-    });
-  </script>
-  <script type="text/javascript">
-    document.addEventListener('DOMContentLoaded', () => {
-      (function(){
-        this.innerHTML=unescape('%63%6f%6e%74%61%63%74%6f%40%61%6e%67%65%6c%67%61%72%63%69%61%2e%64%65%76');
-        this.href="mailto:%63%6f%6e%74%61%63%74%6f%40%61%6e%67%65%6c%67%61%72%63%69%61%2e%64%65%76";
-        this.style.display="unset";
-      }).apply(
-        document.querySelector('[href="mailto:honeypot@cia.gov"]')
-      );
-    });
-  </script>
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2e320c0347124c7f9442078d343028b3"}'></script>
-  <!-- End Cloudflare Web Analytics -->
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
